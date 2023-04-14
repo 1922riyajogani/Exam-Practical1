@@ -3,8 +3,11 @@ package com.example.exam_practical;
 import static com.example.exam_practical.R.drawable.*;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,9 +22,21 @@ public class MainActivity extends AppCompatActivity {
 
     String food[] = {"Khandvi","Handvo","Thepla","Undhiyu","Momos","Kebab","Butter Chicken","Nihari","Chaat","Doughnuts"};
 
+    ArrayList<Modelclass> modelclassArrayList = new ArrayList<>();
+
+    RecyclerView rcvlist;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        rcvlist = findViewById(R.id.rcvlist);
+
+        for (int i = 0; i < name.length; i++) {
+
+
+        }
     }
 }
